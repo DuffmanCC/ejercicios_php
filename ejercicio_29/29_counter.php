@@ -18,7 +18,7 @@
 		$posicion_actual = ftell($recurso);
 
 		if ($posicion_actual == $bytes_totales){
-			// me muevo al byte 0 para sobreescribir el archivo
+			// me mueve al byte 0 para sobreescribir el archivo
 			fseek($recurso, 0);
 		}
 
