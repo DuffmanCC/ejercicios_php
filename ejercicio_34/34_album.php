@@ -50,7 +50,7 @@ if (isset($_FILES['archivo']) && $_FILES['archivo']['size'] > 0) {
 		}
 	} else {
 		echo "<p>No es un archivo GIF o JPG valido.</p>";
-	}
+	} // solo si hemos cargado el archivo con éxito me saldrá el botón de OK
 	echo "<form action='{$_SERVER['PHP_SELF']}' method='post'>
 	<input type='submit' value='OK'></form>";
 }
